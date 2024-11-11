@@ -9,5 +9,5 @@
 
 # Resultat från design 
 ## Klassdiagram 
-
+![Alt text](https://github.com/mallan27/2024-isgc08-nielsen/blob/main/Images/classDiagram.png)
 ## Sekvensdiagram
