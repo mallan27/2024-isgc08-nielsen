@@ -1,6 +1,13 @@
 # 2024-isgc08-nielsen
-For the course ISGC08
 
-## UseCase 
+# Resultat från analys
+## UseCase Diagram
 
 ![Alt text](https://github.com/mallan27/2024-isgc08-nielsen/blob/main/Images/useCase.png)
+
+##SekvensDiagram 
+
+# Resultat från design 
+## Klassdiagram 
+
+## Sekvensdiagram
