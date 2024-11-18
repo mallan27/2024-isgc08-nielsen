@@ -3,7 +3,7 @@
 # Resultat från analys
 ## UseCase Diagram
 
-![Alt text](https://github.com/mallan27/2024-isgc08-nielsen/blob/main/Images/useCase.png)
+![Alt text](https://github.com/mallan27/2024-isgc08-nielsen/blob/main/Images/newClassdiagram.png)
 
 ## SekvensDiagram Analys
 ![Alt text](https://github.com/mallan27/2024-isgc08-nielsen/blob/main/Images/exitAnalysSequence.png)
