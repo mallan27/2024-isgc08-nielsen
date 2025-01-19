@@ -16,4 +16,4 @@
 ## Klassdiagram 
 ![Alt text](https://github.com/mallan27/2024-isgc08-nielsen/blob/main/Images/classDiagram.png)
 ## Sekvensdiagram
-![Alt text]([https://github.com/mallan27/2024-isgc08-nielsen/blob/main/Images/openFileSequenceDesign.png])
+![Alt text](https://github.com/mallan27/2024-isgc08-nielsen/blob/main/Images/openFileSequenceDesign.png)
