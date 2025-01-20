@@ -1,47 +1,41 @@
 package model;
-import java.io.File;
-import java.io.FileNotFoundException;
+import java.io.*; 
 
-import javax.swing.JFileChooser;
-import javax.swing.JFrame;
+import controler.Controler;
 
 public class TextEditor {
-	private File fil;
-
-	public File openFile() {
-		JFileChooser fc = new JFileChooser();
-		fc.showOpenDialog(new JFrame());
-		fil = fc.getSelectedFile();
-		return fil;
-
+	private Controler c; 
+	
+	public TextEditor(Controler c) {
+		this.c=c; 
 	}
-
-	public File saveFile() {
-		if (fil == null) {
-			JFileChooser fc = new JFileChooser();
-			fc.showSaveDialog(new JFrame());
-			fil = fc.getSelectedFile();
+	
+	public void openFile(File f) throws Exception {
+		String line=""; 
+		try (BufferedReader bf = new BufferedReader(new FileReader(f))) {
+			String text;
+			while ((text = bf.readLine()) != null) {
+				line= text; 
+			}
 		}
-		return fil;
+		c.setFile(line);
+		 
 	}
 
-	public File saveAsFile() {
-		JFileChooser fc = new JFileChooser();
-		fc.showSaveDialog(new JFrame());
-		fil = fc.getSelectedFile();
-		return fil;
-	}
-
-	public File newFile()throws FileNotFoundException {
-		if (fil != null) {
-			JFileChooser fc = new JFileChooser();
-			fc.showSaveDialog(new JFrame());
-			fil = fc.getSelectedFile();
-		} else {
-			fil=new File(""); 
-			
+	public void saveFile(File f) throws IOException {
+		try (BufferedWriter bw=new BufferedWriter(new FileWriter(f))){
+			bw.write(c.getTextContent());
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
 		}
-		return fil; 
+	}
+
+	public void saveAsFile(File f) throws IOException {
+		try (BufferedWriter bw=new BufferedWriter(new FileWriter(f))){
+			bw.write(c.getTextContent());
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
 	}
 
 }

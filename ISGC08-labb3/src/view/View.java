@@ -1,12 +1,22 @@
 package view;
-import java.io.File;
-import java.io.IOException;
+import java.io.*;
+
+import controler.Controler;
 
 public abstract class View {
-	public abstract void runUI(); 
-	public abstract void showFile(File f) throws IOException; 
-	public abstract void saveAs(File f) throws IOException; 
-	public abstract void save(File f) throws IOException; 
-	public abstract void newFile(File f) throws IOException; 
+	Controler c; 
+	
+	public View(Controler c) {
+		this.c=c; 
+	}
+	public abstract void runUI();
+	public abstract File openFile() throws IOException; 
+	public File saveAs() throws IOException {
+		return null;
+	}
+	public abstract void showFile(String text) throws IOException;
+	public abstract File save() throws IOException;
+	public abstract String getText();
+	public abstract void newFile();
 
 }
