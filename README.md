@@ -14,6 +14,9 @@
 ![Alt text](https://github.com/mallan27/2024-isgc08-nielsen/blob/main/Images/saveFileAnalysSequence.png)
 # Resultat från design 
 ## Klassdiagram 
-![Alt text](https://github.com/mallan27/2024-isgc08-nielsen/blob/main/Images/classDiagram.png)
+![Alt text](https://github.com/mallan27/2024-isgc08-nielsen/blob/main/Images/class.png)
 ## Sekvensdiagram
-![Alt text](https://github.com/mallan27/2024-isgc08-nielsen/blob/main/Images/openFileSequenceDesign.png)
+![Alt text](https://github.com/mallan27/2024-isgc08-nielsen/blob/main/Images/OpenFile.png)
+![Alt text](https://github.com/mallan27/2024-isgc08-nielsen/blob/main/Images/newFile.png)
+![Alt text](https://github.com/mallan27/2024-isgc08-nielsen/blob/main/Images/saveAsfile.png)
+![Alt text](https://github.com/mallan27/2024-isgc08-nielsen/blob/main/Images/saveFile.png)
